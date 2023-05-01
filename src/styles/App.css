@@ -1,0 +1,379 @@
+:root {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  --color: rgba(255, 255, 255, 0.87);
+  --bg-color: #242424;
+  --bg-nav: #343a40;
+  --primary: #c96ce3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  text-align: center;
+}
+/* Responsive Container that resize for secren size */
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.about--arrows {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+}
+.right--arrows {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+.left--arrows {
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+/* Intro Section */
+.intro--div {
+  margin-bottom: 5rem;
+}
+.intro--section {
+  display: flex;
+}
+.intro--title,
+.project--title {
+  font-family: monospace;
+  padding-bottom: 3rem;
+  font-size: 6em;
+  color: var(--primary);
+}
+.intro--gif {
+  height: 400px;
+  width: 400px;
+  margin-left: 5rem;
+}
+.intro--content {
+  margin-left: 10rem;
+  margin-right: 5rem;
+}
+.intro--para {
+  padding-bottom: 2rem;
+  font-size: 1.2em;
+  text-align: left;
+}
+.intro--tech {
+  text-align: left;
+  color: #c96ce3;
+  font-size: 3em;
+  font-family: monospace;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro--techStack {
+  text-align: left;
+}
+.intro--li {
+  margin-left: 1.2rem;
+  font-family: monospace;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+.intro--li:hover {
+  font-size: 1.8em;
+}
+
+/* Projects */
+.project--container {
+  display: flex;
+  margin-bottom: 5rem;
+  
+}
+.para {
+  color: white;
+}
+.project--img {
+  height: 400px;
+  width: 800px;
+  background-size: cover;
+  background-image: url(/images/project/Project-1.png);
+  margin-left: 5rem;
+  border-radius: 10px;
+}
+.project--img-2 {
+  margin-left: 1rem;
+  border-radius: 10px;
+  background-size: cover;
+  background-image: url(/images/project/project-2.png);
+}
+.project--img-3 {
+  height: 400px;
+  width: 800px;
+  background-size: cover;
+  background-image: url(/images/project/Project-3.png);
+  margin-left: 5rem;
+  border-radius: 10px;
+}
+.project--overlay {
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+  background-color: rgba(201, 108, 227, 0.5);
+}
+.project--overlay:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.desc--title {
+  color: #c96ce3;
+  margin-left: 16rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 2em;
+  cursor: pointer;
+}
+.desc--title-2 {
+  color: #c96ce3;
+  margin-right: 16rem;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 2em;
+  cursor: pointer;
+}
+.desc--para {
+  margin-left: 2rem;
+  height: 100px;
+  width: 400px;
+  background-color: #343a40;
+  position: absolute;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.desc--para-2 {
+  margin-left: 7rem;
+  height: 120px;
+  width: 400px;
+  background-color: #343a40;
+  position: absolute;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.desc--para-3 {
+  margin-left: 3rem;
+  height: 100px;
+  width: 420px;
+  background-color: #343a40;
+  position: absolute;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.desc--para p {
+  margin-bottom: 1rem;
+}
+.desc--para-2 p {
+  margin-bottom: 1rem;
+}
+.desc--para-3 p {
+  margin-bottom: 1rem;
+}
+.project--links {
+  height: 25px;
+  width: 25px;
+  margin-left: 22rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.project--links-2 {
+  height: 25px;
+  width: 25px;
+  margin-right: 22rem;
+  cursor: pointer;
+}
+/* Blogs page
+.blog--section {
+  margin-top: 2em;
+}
+.blog-container {
+  display: flex;
+  margin: 3rem;
+}
+.blog--image {
+  margin-left: 5rem;
+}
+.blog--title {
+  font-family: monospace;
+  font-size: 3.5em;
+  color: #c96ce3;
+  margin-bottom: 3rem;
+}
+.blog-1--image {
+  height: 360px;
+  width: 660px;
+}
+.blog--writing {
+  margin-left: 2rem;
+  height: 100px;
+  width: 600px;
+  text-align: left;
+}
+.blog--readmore {
+  margin-top: 2rem;
+}
+.blog--readmore p {
+  font-family: monospace;
+  font-size: 2.5em;
+  color: #c96ce3;
+  cursor: pointer;
+  text-align: left;
+} */
+/* CONTACT PAGE */
+.contact--title {
+  font-family: monospace;
+  font-size: 3.5em;
+  color: #c96ce3;
+  margin-bottom: 3rem;
+}
+.contact--links {
+  margin-top: 8rem;
+}
+.contact--links p {
+  color: #c96ce3;
+  font-size: 1.5em;
+}
+.contact--links a {
+  text-decoration: none;
+  color: #b9fbc0;
+  font-size: 1em;
+}
+.contact--links a:hover {
+  text-decoration: 3px solid underline #c96ce3;
+}
+.contact--para {
+  height: 100px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.2em;
+  text-align: left;
+}
+.contact--socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact--socials img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.footer-container {
+  margin-top: 3rem;
+  background-color: #343a40;
+  height: 11rem;
+  padding: 20px;
+}
+.footer-container p {
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 1.5em;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* INTRO PAGE */
+  .intro--section {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro--gif {
+    height: 100px;
+    width: 100px;
+    margin-left: 3rem;
+  }
+  .intro--title,
+  .project--title {
+    font-size: 4em;
+  }
+  .intro--content {
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-top: 20rem;
+  }
+  /* Blog */
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .blog--image {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .blog--writing {
+    margin-left: 3rem;
+    margin-bottom: 6rem;
+    height: 200px;
+    width: 600px;
+    text-align: left;
+  }
+  /* Contact */
+  .contact--title {
+    font-size: 2em;
+  }
+  .contact--para {
+    height: 200px;
+    width: 300px;
+    font-size: 1em;
+  }
+  .contact--links {
+    margin-top: 2rem;
+  }
+  .footer-container {
+    height: 7.5rem;
+  }
+  .footer-container p {
+    font-size: 1em;
+  }
+}
